@@ -1,0 +1,53 @@
+body{
+	padding: 15px;
+}
+hr { 
+    display: block;
+    margin-left: -15px;
+    border-style: inset;
+    border-width: 1px;
+	align: center; 
+}
+
+#control p{
+	padding:15px 10px; 
+	display:inline;
+	margin: 5px;
+	position: fixed;
+}
+#control{
+	margin-top: 70px;
+}
+
+.sw{
+	width:45px; 
+	padding-top:5px;
+}
+
+.sw_f{
+	width:80px; 
+	padding-top:5px;
+	margin-left: -18px;
+}
+
+.sw_f p{
+	 padding-left: -30px;
+}
+
+#status {
+    margin-top: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+	background-color: #bc0000;
+}
+
+.navbar{
+	background-color: rgb(48, 65, 86);
+	color: white;
+	padding: 10px;
+}
+
+.navbar h4{
+	font-size: 22px;
+}

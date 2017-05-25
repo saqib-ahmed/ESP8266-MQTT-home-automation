@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="bootstrap.css" rel="stylesheet">
+		<link href='switch.css' rel='stylesheet' type='text/css'>
+		<link href='style.css' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="jquery-1.10.1.js"></script>
+		<script type="text/javascript" src="mqttws31.js"></script>
+		<script type="text/javascript" src="websocket.js"></script>
+    </head>
+    <body>
+		
+		<header>
+            <div class="navbar navbar-fixed-top">
+                <div class="container">
+              
+					<div class="row">
+						<div class="col-xs-4">
+							<h4>My Room</h4>
+						</div>
+						
+						<div class="col-xs-3">
+						</div> 
+						 
+						<div class="col-xs-1">
+							<div id="status"></div>
+						</div> 
+						
+						<div class="col-xs-3">
+							<h4 id="p1">Offline</h4>
+						</div> 
+						
+					</div>
+                </div>
+            </div>
+        </header>
+
+		<section id="control">
+
+			<div class="row">
+				<div class="col-xs-7">
+					<img class="sw" id="LED1_f" src="light_off.svg"><p>Light</p>
+				</div>
+				<div class="col-xs-5">
+					<label><input type="checkbox" class="ios-switch green  bigswitch" name="LED1" value="1" id="LED1"/><div><div></div></div></label>
+				</div>   
+				<hr>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-7">
+					<img class="sw_f" id="LED2_f" src="fan_off.svg"><p>Fan</p>
+				</div>
+				<div class="col-xs-5">
+					<label><input type="checkbox" class="ios-switch green  bigswitch" name="LED2" value="1" id="LED2"/><div><div></div></div></label>
+				</div>   
+				<hr>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-7">
+					<img class="sw_f" id="LED3_f" src="fan_off.svg"><p>Cooler</p>
+				</div>
+				<div class="col-xs-5">
+					<label><input type="checkbox" class="ios-switch green  bigswitch" name="LED3" value="1" id="LED3"/><div><div></div></div></label>
+				</div>   
+				<hr>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-7">
+					<img class="sw" id="LED4_f" src="moon_off.svg"><p>Night Lamp</p>
+				</div>
+				<div class="col-xs-5">
+					<label><input type="checkbox" class="ios-switch green  bigswitch" name="LED4" value="1" id="LED4"/><div><div></div></div></label>
+				</div>   
+				<hr>
+			</div>
+		</section>
+    </body>
+</html>
